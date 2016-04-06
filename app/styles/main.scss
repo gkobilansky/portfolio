@@ -1,0 +1,205 @@
+$icon-font-path: '../fonts/';
+@import "palette";
+// bower:scss
+@import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
+@import "bower_components/fullpage.js/jquery.fullPage.scss";
+// endbower
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+
+/* Basics */
+
+body {
+    color: #fff;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* Style for our header texts
+	* --------------------------------------- */
+
+h1,
+h2 {
+    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    @media (min-width: 768px) {
+        font-size: 4em;
+    }
+}
+
+h2 {
+    font-style: normal;
+    font-weight: 400;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.3em;
+}
+
+
+/* Centered texts in each section
+	* --------------------------------------- */
+
+.section {
+    text-align: center;
+}
+
+
+/* Sections */
+
+#header {
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(https://source.unsplash.com/unRkg2jH1j0/2048x1364);
+    background-position: center;
+    .logo {
+        position: absolute;
+        top: 5%;
+        left: 2.5%;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        img {
+            height: 44px;
+        }
+    }
+    //    @media (min-width: 768px) {
+    //        h1 {
+    //            font-size: 80px;
+    //        }
+    //    }
+}
+
+
+/* WORK */
+
+#work {
+    .slide {
+        background-size: cover;
+        // background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), 0% 0%, cover, no-repeat;
+    }
+    div.stats {
+        //display: none;
+        text-align: center;
+    }
+    #taol {
+        background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/taol-phone.jpg);
+        background-size: cover;
+        h1,
+        h2 {
+            text-align: center;
+        }
+        h2 {
+            padding-bottom: 75px;
+        }
+        div.main {
+            text-align: right;
+        }
+    }
+    #wealthbot {
+        background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/wealthbot.jpg);
+        text-align: left;
+        background-position: center;
+        background-size: cover;
+        img {
+            height: 100px;
+        }
+    }
+    #flowathletics {
+        background-image: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/flowathletics.jpg);
+        background-position: center;
+        background-size: cover;
+        div.main {
+            text-align: right;
+        }
+    }
+}
+
+
+/* Non Work */
+
+#process {
+    .col-xs-3 {
+        padding: 0;
+    }
+}
+
+#about {
+    background-image: url(../images/main.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#contact {}
+
+#footer {
+    background: $color1;
+    p {
+        color: #fff;
+        padding: 2em;
+        margin: 0;
+    }
+}
+
+
+/* Video */
+
+#header {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+
+/* Responsive: Portrait tablets and up */
