@@ -1,13 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="">
 
 <head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lancekey - Digital Product Design and Development</title>
+    <title>Lancekey - Web Design and Development</title>
 
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
     <!-- Place favicon.ico in the root directory -->
 
     <!-- build:css styles/vendor.css -->
@@ -33,36 +49,51 @@
 
     <div id="fullpage">
         <div class="section" id="header">
-<!--
-                <div class="video-container">
-                    <div class="filter"></div>
-                    <video autoplay loop class="fillWidth">
-                        <source src="images/Boarding/MP4/Boarding.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                        <source src="images/Boarding/WEBM/Boarding.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
-                    </video>
-                    <div class="poster hidden">
-                        <img src="images/Boarding/Snapshot/Boarding.jpg" alt="">
-                    </div>
-                </div>
--->
-                <h1>WEBDEV FOR YOUR ORG.</h1>
-            <h2>Our team delivers proven results for startups, SMBs and non-profits.</h2>
-            <a class="btn btn-lg btn-default" href="#process">See how we do it</a>
-            <a href="http://lancekey.com" class="logo"><img src="images/lancekey_words.png" class="image-responsive" alt="Lancekey Advising" /></a>
+                <h1>WEB<span class="typed">DEV</span> FOR YOUR ORG.</h1>
+                <p class="lead"><mark>Our team delivers proven results for startups, SMBs and non-profits.</mark></p>
+                <a class="scroll arrow"><span></span></a>
+                <a href="http://lancekey.com" class="logo"><img src="images/lancekey_words.png" class="image-responsive" alt="Lancekey Advising" /></a>
         </div>
         <div class="section" id="work">
-            <div class="slide container" id="taol">
+            <div class="slide container" id="work-section">
                 <div class="intro">
                     <h1>PURPOSE DRIVEN, RESULTS ORIENTED.</h1>
-                    <h2>This section contains a small sample of our work.</h2>
+                    <a class="btn btn-lg btn-primary moveright">A Sample Of Our Work <span>&rarr;</span></a>
                 </div>
+            </div>
+            <div class="slide container" id="wealthbot">
+                <div class="row stats">
+                    <div class="col-sm-2 col-sm-offset-4">
+                       <img src="images/icons/mobile-white.png" alt="responsive design">
+                       <p>Clean and mobile friendly</p>
+                    </div>
+                    <div class="col-sm-2 col-sm-offset-3">
+                       <img src="images/icons/github-white.png" alt="Github">
+                       <p>#1 Weekly Trending Project on Github</p>
+                    </div>
+                </div>
+                <div class="row main">
+                    <div class="col-md-4 col-md-offset-1">
+                        <img src="images/wealthbot.svg" class="image-responsive" alt="wealthbot.io" />
+                        <h3>wealthbot.io</h3>
+                        <p>Front-end development for this revolutionary open source fintech project.</p>
+                    </div>
+                </div>
+                <div class="row stats">
+                    <div class="col-sm-2 col-sm-offset-9">
+                        <img src="images/icons/conversion-white.png" alt="high conversion rate">
+                        <p>4% conversion rate</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide container" id="taol">
                 <div class="row stats">
                    <div class="col-sm-4">
                        <img src="images/timferrisshow.jpeg" alt="">
                        <p>Featured on the Tim Ferriss Show</p>
                    </div>
                    <div class="col-sm-4">
-                       <img src="images/phone.png" alt="">
+                       <img src="images/icons/mobile-white.png" alt="responsive design">
                        <p>Clean and mobile friendly</p>
                    </div>
                 </div>
@@ -75,33 +106,33 @@
                 </div>
                 <div class="row stats">
                     <div class="col-sm-4">
-                        <img src="images/conversion.png" alt="">
+                        <img src="images/icons/conversion-white.png" alt="high conversion rate">
                         <p>7% conversion rate</p>
                     </div>
                 </div>
             </div>
-            <div class="slide container" id="wealthbot">
+            <div class="slide container" id="pacem">
                 <div class="row stats">
                     <div class="col-sm-4 col-sm-offset-5">
-                       <img src="images/phone.png" alt="">
-                       <p>Clean and mobile friendly</p>
+                       <img src="images/icons/animation-white.png" alt="advanced animation">
+                       <p>SVG, Canvas & CSS animations</p>
                     </div>
                     <div class="col-sm-2">
-                       <img src="images/timferrisshow.jpeg" alt="">
-                       <p>Featured on the Tim Ferriss Show</p>
+                       <img src="images/icons/security-white.png" alt="secure sso integration">
+                       <p>Single sign-on integration with 3rd party document management provider</p>
                     </div>
                 </div>
                 <div class="row main">
                     <div class="col-md-4 col-md-offset-1">
-                        <img src="images/wealthbot.svg" class="image-responsive" alt="wealthbot.io" />
-                        <h1>wealthbot.io</h1>
-                        <p>Front-end development for this revolutionary open source fintech project.</p>
+                        <img src="images/pacem-logo.png" class="image-responsive" alt="pacem.mx" />
+                        <h3>Pacem</h3>
+                        <p>Dual language client portal for one of the oldest Investment Advisors in Mexico. Single-sign on integration and heavy SVG & Canvas animation requirements made this a very interesting project for us.</p>
                     </div>
                 </div>
                 <div class="row stats">
                     <div class="col-sm-2 col-sm-offset-9">
-                        <img src="images/conversion.png" alt="">
-                        <p>7% conversion rate</p>
+                        <img src="images/icons/conversion-white.png" alt="">
+                        <p>4% conversion rate</p>
                     </div>
                 </div>
             </div>
@@ -130,17 +161,17 @@
                     </div>
                 </div>
             </div>
-            <div class="slide">
-                <div class="">
-                    <h2>IMPECABLE DELIVERY</h2>
-                    <h3>Uniquely flexible, we deliver premium results for startups, SMBs and non-profits.</h3>
-                    <a class="btn btn-lg btn-default" href="#contact">Chat With Us</a>
+            <div class="slide container">
+                <div class="intro">
+                    <h1>IMPECCABLE DELIVERY.</h1>
+                    <h2>Uniquely flexible, we deliver premium results for startups, SMBs and non-profits.</h2>
+                    <a class="btn btn-lg btn-primary scroll" >Our Process <span>&darr;</span></a>
                 </div>
             </div>
         </div>
         <div class="section" id="process">
             <div class="intro container">
-                <h1>LEARN, DESIGN, BUILD, LISTEN, REPEAT.</h1>
+                <h1>LISTEN, DESIGN, BUILD, REPEAT.</h1>
                 <div class="row">
                     <div class="col-xs-6">
                         <p>In this step we get to know you and your business.</p>
@@ -179,27 +210,40 @@
             </div>
         </div>
         <div class="section" id="about">
-            <div class="intro">
-                <h1><span class="glyphicon glyphicon-heart"></span> BUILT FOR WIN-WIN.</h1>
-            </div>
+            <div class="intro col-sm-offset-2 col-sm-8">
+                <div class="icon">
+                    <svg id="svg-1" xmlns="http://www.w3.org/2000/svg">
+                         <g>
+                          <path fill="none"  d="m9.3,65.6l-2.2,-21.6c-0.1,-1 0.2,-2.1 1.1,-2.8c1,-0.8 2.6,-1.1 3.8,0.2c0.8,0.9 1.2,3.9 1.4,4.7c0.5,2.8 0.9,6.9 1,9.7c0,0.2 0,0.5 0,0.7c0.1,1.3 0.4,2.4 0.9,3.5c2.9,6.3 8.7,14.2 8.7,14.2l0.3,0.5c0.2,0.4 0.7,0.5 1.1,0.3c0.4,-0.2 0.6,-0.8 0.3,-1.2l-7.7,-12.5c-0.8,-1.4 -0.4,-3.4 1.1,-4.3c1.5,-0.9 3.5,-0.4 4.3,0.9l8,10.2c0.5,0.7 1.5,1.6 2.2,2.1c7.2,5.2 8.1,10.4 8.8,13.1c0,0 0.1,0.6 0.1,1.5l0,0l0,0c0,0.7 0,1.6 -0.1,2.5l-0.6,8.7c0,0.6 -0.5,1.1 -1.1,1.1l-13.5,-0.1c-0.6,0 -1.1,-0.5 -1.1,-1.1l-0.3,-7.1l-12.8,-15.4c-1.9,-2 -3.2,-4.3 -3.6,-7l-0.1,-0.8zm5.8,-22.7c0.2,0.8 0.4,1.5 0.5,2.3c0.4,2.4 1,6.9 1.1,9.2c0,0.2 0,0.5 0,0.7c0.3,-0.2 0.6,-0.5 0.9,-0.6c0.4,-0.2 0.8,-0.4 1.2,-0.6c0,0 0,0 0,-0.1c-0.3,-2.2 -1.1,-6.5 -1.7,-8.6c-0.2,-1.1 -0.8,-1.9 -2,-2.3zm4.3,3.1c0.4,1.6 1.3,4.6 1.5,6.2l0.1,1.1c0,0.1 0,0.2 0,0.3c0.7,0 1.3,0.2 1.9,0.4c-0.2,-1.4 -1.2,-4.3 -1.5,-5.7c-0.2,-1.1 -0.9,-1.9 -2,-2.3zm68.7,-4.6c-0.8,0.9 -1.2,3.9 -1.4,4.7c-0.5,2.8 -0.9,6.9 -1,9.7c0,0.2 0,0.5 0,0.7c-0.1,1.3 -0.4,2.4 -0.9,3.5c-2.9,6.3 -8.7,14.2 -8.7,14.2l-0.3,0.5c-0.3,0.3 -0.8,0.5 -1.1,0.3c-0.4,-0.2 -0.6,-0.8 -0.3,-1.2l7.6,-12.5c0.8,-1.4 0.4,-3.4 -1.2,-4.3c-1.5,-0.9 -3.5,-0.4 -4.3,0.9l-8,10.2c-0.5,0.7 -1.5,1.6 -2.2,2.1c-7.2,5.2 -8.1,10.4 -8.8,13.1c0,0 -0.1,0.6 -0.1,1.5l0,0c0,0.7 0,1.6 0.1,2.5l0.5,8.6c0,0.6 0.5,1.1 1.1,1.1l13.7,0c0.6,0 1.1,-0.5 1.1,-1.1l0.3,-7.1l12.8,-15.4c1.9,-2 3.2,-4.3 3.6,-7l0.1,-0.8l2.2,-21.6c0.1,-1.1 -0.3,-2.2 -1.1,-2.8c-1,-0.8 -2.5,-1.1 -3.7,0.2zm-6.9,12.4c0,0 0,0.1 0,0c0.5,0.2 0.9,0.4 1.3,0.6c0.3,0.2 0.6,0.4 0.9,0.6c0,-0.2 0,-0.5 0,-0.7c0,-2.3 0.6,-6.8 1.1,-9.2c0.1,-0.7 0.3,-1.5 0.5,-2.3c-1.1,0.4 -1.8,1.2 -2,2.3c-0.8,2.3 -1.5,6.5 -1.8,8.7zm-4.2,0.1c0.6,-0.2 1.3,-0.4 1.9,-0.4c0,-0.1 0,-0.2 0,-0.3l0.1,-1.1c0.2,-1.6 1.1,-4.5 1.5,-6.2c-1.1,0.4 -1.7,1.2 -2,2.2c-0.3,1.5 -1.3,4.4 -1.5,5.8zm3.9,-35.5c0,6.9 -5.6,12.6 -12.6,12.6l-1.6,0c-2.4,5.2 -7.1,9.2 -12.9,10.4l0,7.9l4.5,0c1.4,0 2.5,1.1 2.5,2.5l0,3.3l3.9,0l0,11.8l-29.4,0l0,-11.8l3.9,0l0,-3.3c0,-1.4 1.1,-2.5 2.5,-2.5l4.5,0l0,-7.9c-5.7,-1.2 -10.5,-5.2 -12.9,-10.4l-1.6,0c-6.9,0 -12.6,-5.6 -12.6,-12.6l0,-9.6l12.6,0l0,-5.9l36.7,0l0,5.9l12.6,0l0,9.6l-0.1,0zm-49.2,6.2c0,-0.4 0,-0.8 0,-1.2l0,-8.3l-6.2,0l0,3.3c-0.1,3.4 2.7,6.2 6.2,6.2l0,0zm13.2,31.1l0,6.3l10.2,0l0,-6.3l-10.2,0zm15.3,-37.9c-0.3,-1 -1.2,-1.7 -2.3,-1.8l-3.9,-0.3l-1.6,-3.7c-0.4,-1 -1.4,-1.6 -2.4,-1.6c-1.1,0 -2,0.6 -2.4,1.6l-1.5,3.7l-4,0.3c-1.1,0.1 -2,0.8 -2.3,1.8c-0.3,1 0,2.1 0.8,2.8l3,2.5l-0.9,3.9c-0.2,0.8 0,1.6 0.5,2.2c0.8,1 2.3,1.3 3.5,0.6l3.4,-2.1l3.4,2.1c0.4,0.3 0.9,0.4 1.4,0.4c0.8,0 1.6,-0.4 2.1,-1c0.5,-0.6 0.7,-1.5 0.5,-2.2l-0.9,-3.8l3,-2.5c0.6,-0.8 0.9,-1.9 0.6,-2.9zm14.4,-2.7l-6.2,0l0,8.3c0,0.4 0,0.8 0,1.2l0,0c3.4,0 6.2,-2.8 6.2,-6.2l0,-3.3zm-24.6,-0.6l-1.7,4.2l-4.6,0.3l3.5,2.9l-1.1,4.4l3.9,-2.3l3.9,2.4l-1.1,-4.4l3.5,-2.9l-4.6,-0.3l-1.7,-4.3z"/>
+                         </g>
+                    </svg>
+                </div>
+                <h1>BUILT FOR WIN-WIN.</h1>
+          
             <p>Our missions is to deliver results without sacrificing unity. Founded by Gene Kobilansky, Lancekey Advising is built on the principle of abundance - working together, we can create more than alone. We provide the team to grow your vision.</p>
+            </div>
         </div>
-        <div class="section container" id="contact">
-            <h1>EASY TO TALK TO</h1>
+        <div class="section" id="contact">
+            <h1>EASY TO TALK TO.</h1>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-sm-offset-3 col-sm-3">
                     <h2><span class="glyphicon glyphicon-envelope"></span></h2>
                     <p>hi@lancekey.com</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-sm-3">
+                                    <!-- Calendly link widget begin -->
+                    <link href="https://calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://calendly.com/assets/external/widget.js" type="text/javascript"></script>
+                    <a href="" onclick="Calendly.showPopupWidget('https://calendly.com/gkobilansky');return false;">
                     <h2><span class="glyphicon glyphicon-phone"></span></h2>
-                    <p>Book an intro call</p>
-                </div>
-            </div>
+                    <p>Book an intro call</p></a>
+                </div>    
+                                    <!-- Calendly link widget end -->
+            </div>                            
         </div>
         <div class="section fp-auto-height" id="footer">
-            <div class="container text-center">
-                <p><img src="http://gk.lancekey.com/img/lancekey_16_white.png"> Lancekey - <span id="date"></span>. All Movie Rights Reserved.</p>
+            <div class="text-center">
+                <p><img src="favicon-32x32.png"> Lancekey - <span id="date"></span>. All Movie Rights Reserved. <br />Otherwise: <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p>
             </div>
         </div>
     </div>
@@ -224,10 +268,12 @@
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
-    <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script>
-    <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>
+    <script src="/bower_components/jquery/dist/jquery.js"></script> 
+    <script src="/bower_components/typed.js/dist/typed.min.js"></script>
+<!--     <script src="/bower_components/fullpage.js/vendors/jquery.easings.min.js"></script> -->
+   <!-- <script src="/bower_components/fullpage.js/vendors/jquery.slimscroll.min.js"></script>  -->
     <script src="/bower_components/fullpage.js/jquery.fullPage.js"></script>
+    <script src="/bower_components/vivus/dist/vivus.min.js"></script>
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -248,7 +294,6 @@
 
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
-    <script src="scripts/video-banner.js"></script>
     <!-- endbuild -->
 </body>
 
