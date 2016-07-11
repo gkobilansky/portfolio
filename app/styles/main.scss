@@ -62,7 +62,7 @@ h2 {
 /* Sections */
 
 #header {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.30)), url(https://source.unsplash.com/unRkg2jH1j0/2048x1364);
+    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.30)), url(../images/background.jpeg);
     background-position: center;
     .logo {
         position: absolute;
@@ -152,23 +152,28 @@ h2 {
     .profile p,
     .profile img,
     .profile ul,
-    .services span,
+    .services img,
     .services h4 {
         opacity: 0;
 
+    }
+
+    .services img {
+        width: 75px;
     }
 
     .profile ul {
         text-align: right;
         list-style: none;
     }
-    img{
+    .profile img{
         height: 175px;
     }
 
     .icon {
-        width: 100px;
-        height: 100px;
+        width: 60px;
+        opacity: 0;
+        margin-bottom: 4em;
     }
 
     .services {

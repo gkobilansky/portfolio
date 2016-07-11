@@ -38,8 +38,8 @@ $(document).ready(function () {
             if(index === 3) {
              //   new Vivus('svg-1', {duration: 500});
 
-                $('.profile ul, .profile p, .profile img').delay(1000).fadeTo(2000, 1, function(){
-                    $('.services span, .services h4').fadeTo(500, 1)
+                $('.profile ul, .profile p, .profile img, .icon').delay(1000).fadeTo(2000, 1, function(){
+                    $('.services img, .services h4').fadeTo(500, 1)
                         }
                     )
                 }
