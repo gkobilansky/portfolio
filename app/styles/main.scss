@@ -20,6 +20,11 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
 
 /* Style for our header texts
 	* --------------------------------------- */
@@ -122,21 +127,58 @@ h2 {
 /* Non Work */
 
 #process {
+    .intro {
+        .top-text {
+        position: relative;
+        top: 50px;
+    }
+        .bottom-text {
+        position: relative;
+        top: -75px;    
+        }
+}
     .col-xs-3 {
         padding: 0;
+    }
+    .col-xs-3 img {
+        max-width: 75%;
         opacity: 0;
     }
 }
 
 #about {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/gene-kobilansky.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-color: $color4;
+
+    .profile p,
+    .profile img,
+    .profile ul,
+    .services span,
+    .services h4 {
+        opacity: 0;
+
+    }
+
+    .profile ul {
+        text-align: right;
+        list-style: none;
+    }
+    img{
+        height: 175px;
+    }
 
     .icon {
         width: 100px;
         height: 100px;
     }
+
+    .services {
+        h4 {
+            text-transform: uppercase;
+        }
+        span {
+            margin-top: 7rem;
+        }
+    }   
 
     svg {
         //display: none;

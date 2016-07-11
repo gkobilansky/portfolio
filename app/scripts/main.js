@@ -23,17 +23,28 @@ $(document).ready(function () {
         },
 
         afterLoad: function(anchorLink, index) {
-            if(index == 2) {
-            var duration = 2000;
+            if(index === 2) {
 
-                $('#process .col-xs-3').each(function(i) {
-                    console.log(this); 
-                   $(this).delay( (i)*(duration/2) ).fadeTo(duration, 1);
-                });
+            var duration = 2000,
+                order = [0,1,3,2],
+                steps = $('#process img');
+
+
+                for(var i = 0; i < 4; i++) {
+                    console.log(steps[order[i]]);
+                    $('#process img').eq(order[i]).delay( (i)*(duration/2) ).fadeTo(duration, 1);
+               }         
             }
+            if(index === 3) {
+             //   new Vivus('svg-1', {duration: 500});
+
+                $('.profile ul, .profile p, .profile img').delay(1000).fadeTo(2000, 1, function(){
+                    $('.services span, .services h4').fadeTo(500, 1)
+                        }
+                    )
+                }
         }
     });
-   new Vivus('svg-1', {duration: 500});
     $('#work .intro').mouseenter(function(){
         $('.btn span').fadeTo('slow', 1);
         });
