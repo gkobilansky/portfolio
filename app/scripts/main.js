@@ -15,10 +15,14 @@ $(document).ready(function () {
         
 
         onSlideLeave: function() {
-            $('.stats').fadeOut();
+          //  $('.stats').fadeOut();
         },
         afterSlideLoad: function() {
-            $('.stats').fadeIn('slow');
+          //  $('.stats').fadeIn('slow');
+
+          // if(index === 3) {
+          //    
+          // }
 
         },
 
@@ -36,13 +40,21 @@ $(document).ready(function () {
                }         
             }
             if(index === 3) {
-             //   new Vivus('svg-1', {duration: 500});
 
                 $('.profile ul, .profile p, .profile img, .icon').delay(1000).fadeTo(2000, 1, function(){
                     $('.services img, .services h4').fadeTo(500, 1)
                         }
                     )
-                }
+            }
+            if(index === 5) {
+                console.log('hello');
+                 new Vivus('goodbye', {
+                    duration: 200,
+                    start: 'autostart'
+                 }, function(){
+                    console.log('drawing');
+                 });
+            }
         }
     });
     $('#work .intro').mouseenter(function(){
@@ -67,23 +79,24 @@ $(document).ready(function () {
   $('.logo img').attr('src', 'images/logo.png');
 }
 
-   // $('.fp-slidesNav a.active').parent().next().css('animation', 'sdb 3s infinite');
 
+   // new Vivus('goodbye', {duration: 500});
 
 // Typing
-$('.typed').typed({
-    strings: ['DEV', ' DESIGN', ' MARKETING', ' ANYTHING'],
-    contentType: 'html', // or 'text'
-    startDelay: 10,
-    // backspacing speed
-    typeSpeed: 100,
-    backSpeed: 50,
-    // time before backspacing
-    backDelay: 200,
-    // loop
-    loop: false,
-    callback: function() {
-        $('.typed-cursor').css('display', 'none');
-    }
-  });
+    $('.typed')
+        .typed({
+            strings: ['DEV', ' STRATEGY', ' MARKETING', ' ANYTHING'],
+            contentType: 'html', // or 'text'
+            startDelay: 10,
+            // backspacing speed
+            typeSpeed: 100,
+            backSpeed: 50,
+            // time before backspacing
+            backDelay: 200,
+            // loop
+            loop: false,
+            callback: function() {
+                $('.typed-cursor').css('display', 'none');
+            }
+        });
 });

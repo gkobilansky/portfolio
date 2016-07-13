@@ -20,9 +20,30 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
+a {
+    color: $gold;
+    transition: ease .5s;
+    &:hover, &:focus {
+        text-decoration: none;
+        color: #ffffff;
+        transition: ease .5s;
+    }
+}
+
+
+
 .vertical-align {
     display: flex;
     align-items: center;
+}
+
+mark {
+    background-color: $gold;
+    color: #ffffff;
+}
+
+blockquote {
+    border-left: 5px solid rgb(139, 138, 50);
 }
 
 
@@ -84,20 +105,24 @@ h2 {
     .slide {
         background-size: cover;
     }
+    img {
+        width: 100px;
+    }
     div.stats {
         text-align: center;
-        display: none;
+        margin-top: 5em;
+      //  display: none;
 
     }
     #taol {
-        background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/taol-phone.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/taol-phone.jpg);
         background-size: cover;
         div.main {
             text-align: right;
         }
     }
     #wealthbot {
-        background: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/wealthbot.jpg);
+        background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/wealthbot.jpg);
         text-align: left;
         background-position: center;
         background-size: cover;
@@ -106,19 +131,11 @@ h2 {
         }
     }
     #pacem {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/pacem.jpg);
+        background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pacem.jpg);
         background-position: center;
         background-size: cover;
         div.main {
             text-align: left;
-        }
-    }
-    #flowathletics {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../images/flowathletics.jpg);
-        background-position: center;
-        background-size: cover;
-        div.main {
-            text-align: right;
         }
     }
 }
@@ -158,8 +175,14 @@ h2 {
 
     }
 
+    
+
     .services img {
-        width: 75px;
+        width: 90px;
+        transition: all .2s ease-in-out;
+        &:hover {
+            transform: scale(1.8);
+        }
     }
 
     .profile ul {
@@ -171,9 +194,10 @@ h2 {
     }
 
     .icon {
-        width: 60px;
+        color: $gold;
+        width: 50px;
         opacity: 0;
-        margin-bottom: 4em;
+        margin-bottom: 3em;
     }
 
     .services {
@@ -192,14 +216,27 @@ h2 {
     }
 }
 
-#contact {}
+#contact {
+    text-transform: uppercase;
+    a {
+        color: #ffffff;
+        &:hover {
+            color: $gold;
+        }
+    }
+}
 
 #footer {
-    background: $color1;
+    background: $color2;
+    div {
+       // margin-top: 2em;
+    }
     p {
-        color: $gold;
         padding: 2em;
         margin: 0;
+    }
+    svg {
+        width: 100px;
     }
 }
 
