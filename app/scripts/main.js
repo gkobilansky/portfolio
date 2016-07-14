@@ -12,7 +12,6 @@ $(document).ready(function () {
         slidesNavPosition: 'bottom',
         controlArrows: false,
         responsiveWidth: 900,
-        
 
         onSlideLeave: function() {
           //  $('.stats').fadeOut();
@@ -21,39 +20,32 @@ $(document).ready(function () {
           //  $('.stats').fadeIn('slow');
 
           // if(index === 3) {
-          //    
-          // }
-
+          //
+        // }
         },
 
         afterLoad: function(anchorLink, index) {
             if(index === 2) {
 
             var duration = 2000,
-                order = [0,1,3,2],
-                steps = $('#process img');
-
-
+                order = [0, 1, 3, 2];
                 for(var i = 0; i < 4; i++) {
-                    console.log(steps[order[i]]);
-                    $('#process img').eq(order[i]).delay( (i)*(duration/2) ).fadeTo(duration, 1);
-               }         
+                    $('#process img').eq(order[i]).delay( (i) * (duration / 2) ).fadeTo(duration, 1);
+               }
             }
             if(index === 3) {
-
-                $('.profile ul, .profile p, .profile img, .icon').delay(1000).fadeTo(2000, 1, function(){
-                    $('.services img, .services h4').fadeTo(500, 1)
+                $('.profile ul, .profile p, .profile img, .icon').delay(200).fadeTo(1500, 1, function(){
+                    $('.services img, .services h4').fadeTo(500, 1);
                         }
-                    )
+                    );
             }
             if(index === 5) {
-                console.log('hello');
-                 new Vivus('goodbye', {
+                 var vivus = new Vivus('goodbye', {
                     duration: 200,
                     start: 'autostart'
-                 }, function(){
-                    console.log('drawing');
                  });
+
+                 vivus.play();
             }
         }
     });
@@ -79,8 +71,6 @@ $(document).ready(function () {
   $('.logo img').attr('src', 'images/logo.png');
 }
 
-
-   // new Vivus('goodbye', {duration: 500});
 
 // Typing
     $('.typed')

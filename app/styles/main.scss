@@ -236,12 +236,8 @@ h4 {
 
 #footer {
     background: $color2;
-    div {
-       // margin-top: 2em;
-    }
-    p {
-        padding: 2em;
-        margin: 0;
+    div.row {
+        margin: 2em 0 2em 0;
     }
     svg {
         width: 100px;
@@ -250,7 +246,6 @@ h4 {
 
 
 /* Scroll Arrow */
-
 a.scroll.arrow {
     cursor: pointer;
 
@@ -303,7 +298,7 @@ a.scroll.arrow {
     }
 }
 
-//animation 
+//pulse animation 
 @-webkit-keyframes sdb {
     0% {
         opacity: 0;
