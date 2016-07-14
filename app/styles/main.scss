@@ -71,6 +71,11 @@ h2 {
     line-height: 1.3em;
 }
 
+h4 {
+    text-transform: uppercase;
+
+}
+
 
 /* Centered texts in each section
 	* --------------------------------------- */
@@ -136,6 +141,9 @@ h2 {
         background-size: cover;
         div.main {
             text-align: left;
+        }
+        .security {
+            padding-bottom: 25px;
         }
     }
 }
