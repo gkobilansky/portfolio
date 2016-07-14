@@ -180,16 +180,13 @@ h4 {
     .services img,
     .services h4 {
         opacity: 0;
-
     }
-
-    
 
     .services img {
         width: 90px;
         transition: all .2s ease-in-out;
         &:hover {
-            transform: scale(1.8);
+            transform: scale(1.5);
         }
     }
 
@@ -206,7 +203,6 @@ h4 {
     }
 
     .icon {
-        color: $gold;
         width: 50px;
         opacity: 0;
         margin-bottom: 3em;
