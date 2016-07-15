@@ -17,11 +17,6 @@ $(document).ready(function () {
           //  $('.stats').fadeOut();
         },
         afterSlideLoad: function() {
-          //  $('.stats').fadeIn('slow');
-
-          // if(index === 3) {
-          //
-        // }
         },
 
         afterLoad: function(anchorLink, index) {
@@ -32,6 +27,7 @@ $(document).ready(function () {
                 for(var i = 0; i < 4; i++) {
                     $('#process img').eq(order[i]).delay( (i) * (duration / 2) ).fadeTo(duration, 1);
                }
+
             }
             if(index === 3) {
                 $('.profile ul, .profile p, .profile img, .icon').delay(200).fadeTo(1500, 1, function(){
@@ -71,6 +67,7 @@ $(document).ready(function () {
   $('.logo img').attr('src', 'images/logo.png');
 }
 
+// Process mouseover
 
 // Typing
     $('.typed')

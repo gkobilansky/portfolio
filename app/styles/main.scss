@@ -1,5 +1,5 @@
 $icon-font-path: '../fonts/';
-@import "palette";
+@import "variables";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
 @import "bower_components/fullpage.js/jquery.fullPage.scss";
@@ -16,7 +16,8 @@ $icon-font-path: '../fonts/';
 
 body {
     color: #fff;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    font-family: $body;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -30,7 +31,13 @@ a {
     }
 }
 
+.fp-slides {
+    overflow: visible;
+}
 
+.fp-slidesNav.bottom {
+    bottom: 5px;
+}
 
 .vertical-align {
     display: flex;
@@ -44,6 +51,9 @@ mark {
 
 blockquote {
     border-left: 5px solid rgb(139, 138, 50);
+    font-size: 1.3em;
+
+
 }
 
 
@@ -52,8 +62,14 @@ blockquote {
 
 h1,
 h2 {
-    font-family: "proxima-nova-n4", "proxima-nova", sans-serif;
+    font-family: $header;
     text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+h3,
+h4,
+h5 {
+    font-family: $header;
 }
 
 h1 {
