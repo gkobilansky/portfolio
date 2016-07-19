@@ -273,7 +273,7 @@ a.scroll.arrow {
     width: 46px;
     height: 46px;
     margin-left: -23px;
-    border: 1px solid $color5;
+    border: 1px solid $color3;
     border-radius: 100%;
     box-sizing: border-box;
     
@@ -286,8 +286,8 @@ a.scroll.arrow {
     width: 16px;
     height: 16px;
     margin: -12px 0 0 -8px;
-    border-left: 1px solid $color5;
-    border-bottom: 1px solid $color5;
+    border-left: 1px solid $color3;
+    border-bottom: 1px solid $color3;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box; 
@@ -300,7 +300,7 @@ a.scroll.arrow {
     content: '';
     width: 44px;
     height: 44px;
-    box-shadow: 0 0 0 0 rgba(87, 31, 78,.1);
+    box-shadow: 0 0 0 0 rgba(79, 117, 155, .15);
     border-radius: 100%;
     opacity: 0;
     -webkit-animation: sdb 3s infinite;
