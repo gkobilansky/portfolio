@@ -13,16 +13,53 @@ $(document).ready(function () {
         controlArrows: false,
         responsiveWidth: 900,
 
-        onSlideLeave: function() {
-          //  $('.stats').fadeOut();
+        onSlideLeave: function(anchorLink, index, slideAnchor, slideIndex) {
+          if(slideIndex === 2) {
+            $('#ferriss').fadeTo(400, 0);
+            }
         },
-        afterSlideLoad: function() {
-        },
+        afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 
+            if(slideIndex === 1) {
+              // Vivus Animations
+                 var mobileVivus = new Vivus('mobile', {
+                        duration: 200
+                    });
+
+                 var githubVivus = new Vivus('github', {
+                        duration: 200
+                       });
+
+                 mobileVivus.play();
+                 githubVivus.play();
+             }
+
+
+            if(slideIndex === 2) {
+              // Vivus Animations
+                 var conversionVivus = new Vivus('conversion', {
+                        duration: 400
+                    });
+                 conversionVivus.play();
+                 $('#ferriss').fadeTo(400, 1);
+            }
+            if(slideIndex === 3) {
+              // Vivus Animations
+             var animationsVivus = new Vivus('animations', {
+                    duration: 200
+                });
+
+             var ssoVivus = new Vivus('sso', {
+                    duration: 200
+                   });
+             animationsVivus.play();
+             ssoVivus.play();
+             }
+        },
         afterLoad: function(anchorLink, index) {
             if(index === 2) {
 
-            var duration = 2000,
+              var duration = 2000,
                 order = [0, 1, 3, 2];
                 for(var i = 0; i < 4; i++) {
                     $('#process img').eq(order[i]).delay( (i) * (duration / 2) ).fadeTo(duration, 1);
@@ -36,54 +73,56 @@ $(document).ready(function () {
                     );
             }
             if(index === 5) {
-                 var vivus = new Vivus('goodbye', {
+                var vivus5 = new Vivus('goodbye', {
                     duration: 200,
                     start: 'autostart'
                  });
+                 vivus5.play();
+             }
+        },
+        afterRender: function() {
 
-                 vivus.play();
-            }
-        }
+          // Modernizr checks
+
+            if (!Modernizr.svg) {
+          $('.logo img').attr('src', 'images/logo.png');
+                }
+          // Button animations in work section
+          $('#work .intro').mouseenter(function(){
+              $('.btn span').fadeTo('slow', 1);
+          });
+          $('#work .intro').mouseleave(function(){
+            $('.btn span').fadeTo('slow', 0);
+            });
+          // Moving sections and slides
+
+          $('.scroll').on('click', function(){
+                $.fn.fullpage.moveSectionDown();
+            });
+
+          $('.moveright').on('click', function(){
+                $.fn.fullpage.moveSlideRight();
+          });
+          // Footer date
+          $('#date').text(new Date().getFullYear());
+          // Header Typing
+            $('.typed')
+                .typed({
+                    strings: ['DEV', ' STRATEGY', ' MARKETING', ' ANYTHING'],
+                    contentType: 'html', // or 'text'
+                    startDelay: 10,
+                    // backspacing speed
+                    typeSpeed: 100,
+                    backSpeed: 50,
+                    // time before backspacing
+                    backDelay: 200,
+                    // loop
+                    loop: false,
+                    callback: function() {
+                        $('.typed-cursor').css('display', 'none');
+                    }
+                });
+
+      }
     });
-    $('#work .intro').mouseenter(function(){
-        $('.btn span').fadeTo('slow', 1);
-        });
-    $('#work .intro').mouseleave(function(){
-        $('.btn span').fadeTo('slow', 0);
-        });
-
-
-    $('.scroll').on('click', function(){
-        $.fn.fullpage.moveSectionDown();
-        });
-
-    $('.moveright').on('click', function(){
-        $.fn.fullpage.moveSlideRight();
-        });
-    $('#date').text(new Date().getFullYear());
-// Modernizr checks
-
-    if (!Modernizr.svg) {
-  $('.logo img').attr('src', 'images/logo.png');
-}
-
-// Process mouseover
-
-// Typing
-    $('.typed')
-        .typed({
-            strings: ['DEV', ' STRATEGY', ' MARKETING', ' ANYTHING'],
-            contentType: 'html', // or 'text'
-            startDelay: 10,
-            // backspacing speed
-            typeSpeed: 100,
-            backSpeed: 50,
-            // time before backspacing
-            backDelay: 200,
-            // loop
-            loop: false,
-            callback: function() {
-                $('.typed-cursor').css('display', 'none');
-            }
-        });
 });

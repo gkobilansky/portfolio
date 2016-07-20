@@ -31,14 +31,6 @@ a {
     }
 }
 
-// .fp-slides {
-//     overflow: visible;
-// }
-
-// .fp-slidesNav.bottom {
-//     bottom: 5px;
-// }
-
 .vertical-align {
     display: flex;
     align-items: center;
@@ -129,17 +121,36 @@ h4 {
     img {
         width: 100px;
     }
-    div.stats {
-        text-align: center;
-        margin-top: 5em;
-      //  display: none;
+    svg {
+        width: 75px;
+        margin-top: 2vh;
 
+        &#github {
+            margin-left: 45px;
+        }
+
+        @media(min-width: 768px) {
+            width: 100px;
+            margin-top: 5vh;
+        }
     }
     #taol {
         background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/taol-phone.jpg);
         background-size: cover;
         div.main {
             text-align: right;
+        }
+
+        #ferriss {
+            opacity: 0;
+            width: 75px;
+            margin: 2vh auto;
+
+            @media(min-width: 768px) {
+            width: 100px;
+            margin-top: 5vh;
+         }
+
         }
     }
     #wealthbot {
