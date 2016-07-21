@@ -301,10 +301,21 @@ p {
     span {
         margin-top: 15vh; 
     }
+
+    .b-effect1{ transition: all .7s ease; 
+        background: linear-gradient(90deg, $color3 3px, $color5 1px);
+        background-size:500px 1px;
+        background-position: 50% 50%;
+
+        &:hover {
+            background-size:3px 1px;
+        }
+      }
     a {
         color: #ffffff;
-        &:hover {
-            color: $color3;
+        transition: ease .5s;
+        &:hover, &:focus {
+           // font-size: 150%;
         }
     }
 }
@@ -316,6 +327,16 @@ p {
     }
     svg {
         width: 100px;
+    }
+
+    a {
+        color: $color2;
+        transition: ease .5s;
+        &:hover, &:focus {
+            text-decoration: none;
+            color: #ffffff;
+            transition: ease .5s;
+        }
     }
 }
 
