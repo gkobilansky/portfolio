@@ -3,7 +3,6 @@
 $(document).ready(function () {
     'use strict';
     $('#fullpage').fullpage({
-        sectionsColor: ['#a2faa3', '#92c9b1', '#4f759b', '#5d5179', '#571f4e'],
        // anchors: ['header', 'work', 'process', 'about', 'contact', 'footer'],
         menu: '#menu',
         fixedelements: '.logo',

@@ -14,9 +14,29 @@ $icon-font-path: '../fonts/';
 
 /* Basics */
 
+html, body, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+#fullpage, .section, body, html {
+    height: 100%;
+    font-size: 100%;
+    padding: 0;
+    margin-top: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
 body {
     color: #fff;
-    font-size: 1.3em;
     font-family: $body;
     -webkit-font-smoothing: antialiased;
 }
@@ -43,7 +63,8 @@ mark {
 
 blockquote {
     border-left: 5px solid $color3;
-    font-size: 1.1em;
+   // margin: 1em;
+    //font-size: 1em;
 
 
 }
@@ -52,22 +73,24 @@ blockquote {
 /* Style for our header texts
 	* --------------------------------------- */
 
-h1,
-h2 {
-    font-family: $header;
-    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
-}
 
+h1,
+h2,
 h3,
 h4,
 h5 {
     font-family: $header;
 }
 
+h1,
+h2 {
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
 h1 {
-    font-size: 4em;
+    font-size: 2.5em;
     @media (min-width: 768px) {
-    line-height: 1.7;
+   line-height: 1.7;
    }
 }
 
@@ -75,12 +98,24 @@ h2 {
     font-style: normal;
     font-weight: 400;
     margin-bottom: 15px;
-    font-size: 3em;
+    font-size: 1.4em;
     line-height: 1.3em;
 }
 
+h3 {
+    font-size: 1.3em;
+    line-height: 1.3em;
+    margin: .75em;
+}
+
 h4 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin: .75em;
     text-transform: uppercase;
+}
+
+p {
 
 }
 
@@ -96,8 +131,14 @@ h4 {
 /* Sections */
 
 #header {
-    background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.30)), url(../images/background.jpeg);
-    background-position: center;
+     background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.30)), url(../images/background.jpeg);
+     background-position: center;
+ -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 100%;
+
     .logo {
         position: absolute;
         top: 5%;
@@ -115,6 +156,8 @@ h4 {
 /* WORK */
 
 #work {
+    background-color: $color2;
+
     .slide {
         background-size: cover;
     }
@@ -179,6 +222,7 @@ h4 {
 /* Non Work */
 
 #process {
+    background-color: $color3;
     .intro {
         .top-text {
         position: relative;
@@ -186,14 +230,14 @@ h4 {
     }
         .bottom-text {
         position: relative;
-        top: -75px;    
+        top: -5vh;    
         }
 }
     .col-xs-3 {
         padding: 0;
     }
     .col-xs-3 img {
-        max-width: 75%;
+        max-width: 50%;
         opacity: 0;
     }
 }
@@ -252,7 +296,11 @@ h4 {
 }
 
 #contact {
+    background-color: $color5;
     text-transform: uppercase;
+    span {
+        margin-top: 15vh; 
+    }
     a {
         color: #ffffff;
         &:hover {
