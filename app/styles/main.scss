@@ -14,26 +14,19 @@ $icon-font-path: '../fonts/';
 
 /* Basics */
 
-html, body, h1, h2, h3, h4, h5, h6 {
+html, body, h1, h2, h3, h4, h5, h6, #fullpage, .section, {
     margin: 0;
     padding: 0;
     border: 0;
     outline: 0;
-    font-size: 100%;
     vertical-align: baseline;
     background: transparent;
 }
 
-#fullpage, .section, body, html {
+html, body, #fullpage, #header {
     height: 100%;
-    font-size: 100%;
-    padding: 0;
-    margin-top: 0;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
 }
+
 
 body {
     color: #fff;
@@ -63,10 +56,10 @@ mark {
 
 blockquote {
     border-left: 5px solid $color3;
-   // margin: 1em;
-    //font-size: 1em;
-
-
+    font-size: 1em;
+    @media(min-width: 768px) {
+    font-size: 1.2em;
+  }
 }
 
 
@@ -88,7 +81,7 @@ h2 {
 }
 
 h1 {
-    font-size: 2.5em;
+    font-size: 3.5em;
     @media (min-width: 768px) {
    line-height: 1.7;
    }
@@ -103,15 +96,11 @@ h2 {
 }
 
 h3 {
-    font-size: 1.3em;
-    line-height: 1.3em;
-    margin: .75em;
+    margin-bottom: .75em;
 }
 
 h4 {
-    font-size: 1.2em;
-    line-height: 1.2em;
-    margin: .75em;
+    margin-bottom: .75em;
     text-transform: uppercase;
 }
 
