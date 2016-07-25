@@ -70,6 +70,51 @@ $(document).ready(function () {
                     $('.services img, .services h4').fadeTo(500, 1);
                         }
                     );
+
+                $('.listen, img#step1').hover(function() {
+                      $('#step1').fadeOut(500, function() {
+                          $('#step1').attr('src', 'images/process/listen.svg');
+                          $('#step1').fadeIn(500);
+                    });
+                    }, function () {
+                    $('#step1').fadeOut(500, function() {
+                          $('#step1').attr('src', 'images/process/step1.png');
+                          $('#step1').fadeIn(500);
+                    });
+                });
+                $('.build, img#step2').hover(function() {
+                      $('#step2').fadeOut(500, function() {
+                          $('#step2').attr('src', 'images/process/build.svg');
+                          $('#step2').fadeIn(500);
+                    });
+                    }, function () {
+                    $('#step2').fadeOut(500, function() {
+                          $('#step2').attr('src', 'images/process/step2.png');
+                          $('#step2').fadeIn(500);
+                    });
+                });
+                $('.test, img#step3').hover(function() {
+                      $('#step3').fadeOut(500, function() {
+                          $('#step3').attr('src', 'images/process/test.svg');
+                          $('#step3').fadeIn(500);
+                    });
+                    }, function () {
+                    $('#step3').fadeOut(500, function() {
+                          $('#step3').attr('src', 'images/process/step3.png');
+                          $('#step3').fadeIn(500);
+                    });
+                });
+                $('.repeat, img#step4').hover(function() {
+                      $('#step4').fadeOut(500, function() {
+                          $('#step4').attr('src', 'images/process/repeat.svg');
+                          $('#step4').fadeIn(500);
+                    });
+                    }, function () {
+                    $('#step4').fadeOut(500, function() {
+                          $('#step4').attr('src', 'images/process/step4.png');
+                          $('#step4').fadeIn(500);
+                    });
+                });
             }
             if(index === 5) {
                 var vivus5 = new Vivus('goodbye', {

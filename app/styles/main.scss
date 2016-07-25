@@ -81,7 +81,7 @@ h2 {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 4.5em;
     @media (min-width: 768px) {
    line-height: 1.7;
    }
@@ -104,11 +104,6 @@ h4 {
     text-transform: uppercase;
 }
 
-p {
-
-}
-
-
 /* Centered texts in each section
 	* --------------------------------------- */
 
@@ -120,7 +115,7 @@ p {
 /* Sections */
 
 #header {
-     background: linear-gradient( rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.30)), url(../images/background.jpeg);
+     background: url(../images/background.jpeg);
      background-position: center;
  -webkit-background-size: cover;
    -moz-background-size: cover;
@@ -166,8 +161,13 @@ p {
             margin-top: 5vh;
         }
     }
+
+    div.main {
+        background: rgba(0, 0, 0, 0.65);
+        padding: 2em;
+    }
     #taol {
-        background: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/taol-phone.jpg);
+        background: url(../images/taol-phone.jpg);
         background-size: cover;
         div.main {
             text-align: right;
@@ -186,7 +186,7 @@ p {
         }
     }
     #wealthbot {
-        background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url(../images/wealthbot.jpg);
+        background: url(../images/wealthbot.jpg);
         text-align: left;
         background-position: center;
         background-size: cover;
@@ -195,7 +195,7 @@ p {
         }
     }
     #pacem {
-        background-image: linear-gradient( rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(../images/pacem.jpg);
+        background-image: url(../images/pacem.jpg);
         background-position: center;
         background-size: cover;
         div.main {
