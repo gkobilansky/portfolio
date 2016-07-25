@@ -72,47 +72,47 @@ $(document).ready(function () {
                     );
 
                 $('.listen, img#step1').hover(function() {
-                      $('#step1').fadeOut(500, function() {
+                      $('#step1').fadeOut(250, function() {
                           $('#step1').attr('src', 'images/process/listen.svg');
-                          $('#step1').fadeIn(500);
+                          $('#step1').fadeIn(250);
                     });
                     }, function () {
-                    $('#step1').fadeOut(500, function() {
+                    $('#step1').fadeOut(250, function() {
                           $('#step1').attr('src', 'images/process/step1.png');
-                          $('#step1').fadeIn(500);
+                          $('#step1').fadeIn(250);
                     });
                 });
                 $('.build, img#step2').hover(function() {
-                      $('#step2').fadeOut(500, function() {
+                      $('#step2').fadeOut(250, function() {
                           $('#step2').attr('src', 'images/process/build.svg');
-                          $('#step2').fadeIn(500);
+                          $('#step2').fadeIn(250);
                     });
                     }, function () {
-                    $('#step2').fadeOut(500, function() {
+                    $('#step2').fadeOut(250, function() {
                           $('#step2').attr('src', 'images/process/step2.png');
-                          $('#step2').fadeIn(500);
+                          $('#step2').fadeIn(250);
                     });
                 });
                 $('.test, img#step3').hover(function() {
-                      $('#step3').fadeOut(500, function() {
+                      $('#step3').fadeOut(250, function() {
                           $('#step3').attr('src', 'images/process/test.svg');
-                          $('#step3').fadeIn(500);
+                          $('#step3').fadeIn(250);
                     });
                     }, function () {
-                    $('#step3').fadeOut(500, function() {
+                    $('#step3').fadeOut(250, function() {
                           $('#step3').attr('src', 'images/process/step3.png');
-                          $('#step3').fadeIn(500);
+                          $('#step3').fadeIn(250);
                     });
                 });
                 $('.repeat, img#step4').hover(function() {
-                      $('#step4').fadeOut(500, function() {
+                      $('#step4').fadeOut(250, function() {
                           $('#step4').attr('src', 'images/process/repeat.svg');
-                          $('#step4').fadeIn(500);
+                          $('#step4').fadeIn(250);
                     });
                     }, function () {
-                    $('#step4').fadeOut(500, function() {
+                    $('#step4').fadeOut(250, function() {
                           $('#step4').attr('src', 'images/process/step4.png');
-                          $('#step4').fadeIn(500);
+                          $('#step4').fadeIn(250);
                     });
                 });
             }
