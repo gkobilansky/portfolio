@@ -342,15 +342,15 @@ h4 {
 a.scroll.arrow {
     cursor: pointer;
 
-    span {
-    margin-top: 500px;    
+    span {    
     position: absolute;
-    top: 0;
+    z-index: 1;
+    bottom: 5em;
     left: 50%;
     width: 46px;
     height: 46px;
     margin-left: -23px;
-    border: 1px solid $color3;
+    border: 2px solid $color3;
     border-radius: 100%;
     box-sizing: border-box;
     
@@ -363,8 +363,8 @@ a.scroll.arrow {
     width: 16px;
     height: 16px;
     margin: -12px 0 0 -8px;
-    border-left: 1px solid $color3;
-    border-bottom: 1px solid $color3;
+    border-left: 3px solid $color3;
+    border-bottom: 3px solid $color3;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     box-sizing: border-box; 
