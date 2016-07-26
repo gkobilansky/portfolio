@@ -146,11 +146,14 @@ h4 {
         background-size: cover;
     }
     img {
-        width: 100px;
+        width: 50px;
+
+        @media(min-width: 768px) {
+            width: 100px;
+         }
     }
     svg {
-        width: 75px;
-        margin-top: 2vh;
+        width: 60px;
 
         &#github {
             margin-left: 45px;
@@ -162,9 +165,11 @@ h4 {
         }
     }
 
-    div.main {
+    div.main div {
         background: rgba(0, 0, 0, 0.65);
-        padding: 2em;
+        @media(min-width: 768px) {
+            padding: 2em;
+         }
     }
     #taol {
         background: url(../images/taol-phone.jpg);
@@ -191,7 +196,7 @@ h4 {
         background-position: center;
         background-size: cover;
         img {
-            height: 100px;
+            width: 75px;
         }
     }
     #pacem {
