@@ -64,14 +64,8 @@ $(document).ready(function () {
                     $('#process img').eq(order[i]).delay( (i) * (duration / 2) ).fadeTo(duration, 1);
                }
 
-            }
-            if(index === 3) {
-                $('.profile ul, .profile p, .profile img, .icon').delay(200).fadeTo(1500, 1, function(){
-                    $('.services img, .services h4').fadeTo(500, 1);
-                        }
-                    );
-
-                $('.listen, img#step1').hover(function() {
+               // Process image fades. TODO: refactor for DRY
+                $('.listen').hover(function() {
                       $('#step1').fadeOut(250, function() {
                           $('#step1').attr('src', 'images/process/listen.svg');
                           $('#step1').fadeIn(250);
@@ -82,7 +76,7 @@ $(document).ready(function () {
                           $('#step1').fadeIn(250);
                     });
                 });
-                $('.build, img#step2').hover(function() {
+                $('.build').hover(function() {
                       $('#step2').fadeOut(250, function() {
                           $('#step2').attr('src', 'images/process/build.svg');
                           $('#step2').fadeIn(250);
@@ -93,7 +87,7 @@ $(document).ready(function () {
                           $('#step2').fadeIn(250);
                     });
                 });
-                $('.test, img#step3').hover(function() {
+                $('.test').hover(function() {
                       $('#step3').fadeOut(250, function() {
                           $('#step3').attr('src', 'images/process/test.svg');
                           $('#step3').fadeIn(250);
@@ -104,7 +98,7 @@ $(document).ready(function () {
                           $('#step3').fadeIn(250);
                     });
                 });
-                $('.repeat, img#step4').hover(function() {
+                $('.repeat').hover(function() {
                       $('#step4').fadeOut(250, function() {
                           $('#step4').attr('src', 'images/process/repeat.svg');
                           $('#step4').fadeIn(250);
@@ -115,6 +109,14 @@ $(document).ready(function () {
                           $('#step4').fadeIn(250);
                     });
                 });
+
+
+            }
+            if(index === 3) {
+                $('.profile ul, .profile p, .profile img, .icon').delay(200).fadeTo(1500, 1, function(){
+                    $('.services img, .services h4').fadeTo(500, 1);
+                        }
+                    );
             }
             if(index === 5) {
                 var vivus5 = new Vivus('goodbye', {
