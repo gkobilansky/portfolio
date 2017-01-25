@@ -52,11 +52,13 @@ gulp.task('lint', lint(['app/scripts/**/*.js', '!app/scripts/font-load.js']));
 gulp.task('lint:test', lint('test/spec/**/*.js', testLintOptions));
 
 gulp.task('html', ['styles', 'scripts'], () => {
-  return gulp.src('app/*.html')
+  return gulp.src(['app/*.html', '.tmp/**/*.html'])
     .pipe($.useref({searchPath: ['.tmp', 'app', '.']}))
-    .pipe($.if('*.js', $.uglify()))
-    .pipe($.if('*.css', $.cssnano()))
-    .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+    .pipe($.if('**/*.js', $.uglify().on('error', function(e){
+        console.log(e);
+     })))
+    .pipe($.if('**/*.css', $.cssnano()))
+    .pipe($.if('**/*.html', $.htmlmin({collapseWhitespace: true})))
     .pipe(gulp.dest('dist'));
 });
 

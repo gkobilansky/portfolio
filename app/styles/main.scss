@@ -2,7 +2,6 @@ $icon-font-path: '../fonts/';
 @import "variables";
 // bower:scss
 @import "bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss";
-@import "bower_components/fullpage.js/jquery.fullPage.scss";
 // endbower
 .browserupgrade {
     margin: 0.2em 0;
@@ -147,7 +146,6 @@ h4 {
     }
     img {
         width: 50px;
-
         @media(min-width: 768px) {
             width: 100px;
          }
@@ -170,6 +168,22 @@ h4 {
         @media(min-width: 768px) {
             padding: 2em;
          }
+    }
+    #touchtunes-uk {
+        background: url(../images/touchtunes-uk.jpg);
+        background-size: cover;
+        div.main {
+            text-align: right;
+        }
+
+        img {
+            width: 100px;
+            padding: 2em;
+            @media(min-width: 768px) {
+            width: 200px;
+         }
+
+        }
     }
     #taol {
         background: url(../images/taol-phone.jpg);
@@ -227,7 +241,7 @@ h4 {
         }
         .bottom-text {
         position: relative;
-        top: -5vh;    
+        top: -5vh;
         }
     }
     .col-xs-3 {
@@ -283,7 +297,7 @@ h4 {
         span {
             margin-top: 7rem;
         }
-    }   
+    }
 
     svg {
         //display: none;
@@ -296,10 +310,10 @@ h4 {
     background-color: $color5;
     text-transform: uppercase;
     span {
-        margin-top: 15vh; 
+        margin-top: 15vh;
     }
 
-    .b-effect1{ transition: all .7s ease; 
+    .b-effect1{ transition: all .7s ease;
         background: linear-gradient(90deg, $color3 3px, $color5 1px);
         background-size:500px 1px;
         background-position: 50% 50%;
@@ -342,7 +356,7 @@ h4 {
 a.scroll.arrow {
     cursor: pointer;
 
-    span {    
+    span {
     position: absolute;
     z-index: 1;
     bottom: 5em;
@@ -353,7 +367,7 @@ a.scroll.arrow {
     border: 2px solid $color3;
     border-radius: 100%;
     box-sizing: border-box;
-    
+
 
     &:after {
     position: absolute;
@@ -367,7 +381,7 @@ a.scroll.arrow {
     border-bottom: 3px solid $color3;
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    box-sizing: border-box; 
+    box-sizing: border-box;
     }
 
     &:before {
@@ -382,16 +396,16 @@ a.scroll.arrow {
     opacity: 0;
     -webkit-animation: sdb 3s infinite;
     animation: sdb 3s infinite;
-    box-sizing: border-box; 
+    box-sizing: border-box;
     }
-  } 
+  }
 
     &:hover {
     opacity: .5;
     }
 }
 
-//pulse animation 
+//pulse animation
 @-webkit-keyframes sdb {
     0% {
         opacity: 0;
@@ -456,13 +470,13 @@ a.btn-primary.moveright {
   }
   span {
         opacity: 0;
-    
+
     &:hover,
     &:active {
         opacity: 1;
     }
 
-  } 
+  }
 }
 
 // Slide pills
@@ -471,7 +485,7 @@ a.btn-primary.moveright {
     background: $color3;
 }
 
-// Typed 
+// Typed
 
 .typed {
     color: $color3;
