@@ -39,7 +39,6 @@ a {
     &:hover, &:focus {
         text-decoration: none;
         color: #ffffff;
-        transition: ease .5s;
     }
 }
 
@@ -164,10 +163,34 @@ h4 {
     }
 
     div.main div {
-        background: rgba(0, 0, 0, 0.65);
+        background: rgba(0, 0, 0, 0.85);
         @media(min-width: 768px) {
             padding: 2em;
          }
+    }
+    #touchtunes-media {
+        background: url(../images/touchtunes.jpeg);
+        background-size: cover;
+        div.main {
+            text-align: right;
+        }
+
+        img {
+            width: 350px;
+          //  padding: 2em;
+        }
+    }
+    #ge-reports {
+        background: url(../images/ge-store.jpeg);
+        background-size: cover;
+        div.main {
+            text-align: left;
+        }
+
+        img {
+            width: 150px;
+            padding: 2em;
+        }
     }
     #touchtunes-uk {
         background: url(../images/touchtunes-uk.jpg);
@@ -255,6 +278,14 @@ h4 {
 
 #about {
     background-color: $color4;
+    a {
+      color: $color2;
+      transition: ease .5s;
+      &:hover, &:focus {
+          text-decoration: none;
+          color: #ffffff;
+      }
+    }
 
     .profile p,
     .profile img,
@@ -264,11 +295,14 @@ h4 {
         opacity: 0;
     }
 
-    .services img {
-        width: 90px;
+    .services div {
+      //  width: 90px;
         transition: all .2s ease-in-out;
-        &:hover {
+        &:hover, &:focus {
             transform: scale(1.5);
+        }
+        img {
+          width: 90px;
         }
     }
 
@@ -318,7 +352,7 @@ h4 {
         background-size:500px 1px;
         background-position: 50% 50%;
 
-        &:hover {
+        &:hover, &:focus {
             background-size:3px 1px;
         }
       }
@@ -400,7 +434,7 @@ a.scroll.arrow {
     }
   }
 
-    &:hover {
+    &:hover, &:focus {
     opacity: .5;
     }
 }

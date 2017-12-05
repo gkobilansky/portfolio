@@ -13,13 +13,42 @@ $(document).ready(function () {
         responsiveWidth: 900,
 
         onSlideLeave: function(anchorLink, index, slideAnchor, slideIndex) {
-          if(slideIndex === 2) {
+          if(slideIndex === 5) {
             $('#ferriss').fadeTo(400, 0);
             }
         },
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 
-            if(slideIndex === 1) {
+          if(slideIndex === 1) {
+            // Vivus Animations
+               var locationsVivus = new Vivus('locations', {
+                      duration: 200
+                  });
+
+                var speedVivus = new Vivus('speed', {
+                         duration: 200
+                     });
+               locationsVivus.play();
+               speedVivus.play();
+           }
+            if(slideIndex === 2) {
+             // Vivus Animations
+                var displaysVivus = new Vivus('displays', {
+                       duration: 200
+                   });
+
+                displaysVivus.play();
+
+            }
+            if(slideIndex === 3) {
+              // Vivus Animations
+                 var internationalVivus = new Vivus('international', {
+                        duration: 200
+                    });
+                 internationalVivus.play();
+
+             }
+            if(slideIndex === 4) {
               // Vivus Animations
                  var mobileVivus = new Vivus('mobile', {
                         duration: 200
@@ -32,9 +61,7 @@ $(document).ready(function () {
                  mobileVivus.play();
                  githubVivus.play();
              }
-
-
-            if(slideIndex === 2) {
+            if(slideIndex === 5) {
               // Vivus Animations
                  var conversionVivus = new Vivus('conversion', {
                         duration: 400
@@ -42,7 +69,7 @@ $(document).ready(function () {
                  conversionVivus.play();
                  $('#ferriss').fadeTo(400, 1);
             }
-            if(slideIndex === 3) {
+            if(slideIndex === 6) {
               // Vivus Animations
              var animationsVivus = new Vivus('animations', {
                     duration: 200
@@ -56,8 +83,7 @@ $(document).ready(function () {
              }
         },
         afterLoad: function(anchorLink, index) {
-            if(index === 2) {
-
+            if(index === 3) {
               var duration = 2000,
                 order = [0, 1, 3, 2];
                 for(var i = 0; i < 4; i++) {
